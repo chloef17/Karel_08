@@ -6,16 +6,33 @@
  *
  */
 public class SteepleChaseRacer extends Racer {
-	
-	//TODO Subclasses do not inherit any constructors from their superclass
-	//Consequently, you will need to provide a compatible constructor
-	
-	/**
-	 * Re-implement the method to allow for jumping hurdles of any height
-	 */
-	@Override
-	public void jumpRight() {
-		
-	}
+	public SteepleChaseRacer(int Y) {
+   super(Y);
+      }
 
-}
+@Override
+	public void jumpRight() {
+            
+     int l = 0;
+     
+    while(!frontIsClear()){
+      turnLeft();
+      }
+      
+     while(!rightIsClear()){
+      move();
+      l++;
+      }
+      
+      turnRight();
+      move();
+      turnRight();
+      
+         for(int k =0;k < l; k++){
+         move();
+         }
+         turnLeft();
+         }
+       
+      }
+

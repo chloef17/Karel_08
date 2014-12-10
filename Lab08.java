@@ -27,7 +27,7 @@
       
        Display.openWorld("maps/"+filename+".map");
          Display.setSize(18, 16);
-         Display.setSpeed(10);
+         Display.setSpeed(1);
       
          if(type.equals("Racer"))
          {
